@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+ 
+
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div id="barra">
+      <div id="ini">MENÚ</div>
+    </div>
+
+    <div id="todo"
+        (click)="loadDetails(currentCard)"
+        *ngFor="let currentCard of _cards">
+    <ion-card id="img">
+        <img src="assets/imgs/{{currentCard.image}}">
+    </ion-card>
+
+    <div id="text">
+        <p id="tit">{{currentCard.title}}</p>
+        <p id="sinop">{{currentCard.descripcion}}</p>
+    </div>
+    </div>
+
+</ion-content>

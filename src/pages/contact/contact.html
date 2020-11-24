@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+    	
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div id="barra1">
+      <div id="ini1">CONTACTANOS</div>
+    </div>
+
+    <div id="todo1"
+        *ngFor="let currentCard of _cards">
+    <ion-card id="img1">
+        <img src="assets/imgs/{{currentCard.image}}">
+    </ion-card>
+
+    <div id="text1">
+        <p id="tit1">{{currentCard.title}}</p>
+    </div>
+    </div>
+
+</ion-content>

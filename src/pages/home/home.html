@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+    	
+ 
+
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+	<div id="title">POSTRES KASTRO 91</div>
+
+	<ion-card
+		(click)="loadDetails(currentCard)" 
+		id="img1"
+		*ngFor="let currentCard of _cards">
+			<div>
+				<img src="assets/imgs/{{currentCard.image}}">
+			</div>
+			<ion-card-content>
+				<ion-card-title>
+					{{currentCard.title}}
+				</ion-card-title>
+			</ion-card-content>
+	</ion-card>
+	<ion-card 
+		(click)="loadDetails(currentCard)" 
+		id="img2"
+		*ngFor="let currentCard of _cards1">
+		<div>
+			<img src="assets/imgs/{{currentCard.image}}">
+		</div>
+		<ion-card-content>
+				<ion-card-title>
+					{{currentCard.title}}
+				</ion-card-title>
+			</ion-card-content>
+	</ion-card>
+
+</ion-content>
